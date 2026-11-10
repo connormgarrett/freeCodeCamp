@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Webpage_Title</h1>
+    <p id="description">This is the description of the webpage!</p>
+
+    <form id="survey-form">
+
+      <fieldset>
+        <label for="name" id="name-label">
+          Please enter your name:
+        </label>
+        <input
+          id="name"
+          type="text"
+          placeholder="John Doe"
+          required
+        />
+      </fieldset>
+
+      <fieldset>
+        <label for="email" id="email-label">
+          Please enter your email:
+        </label>
+        <input
+          id="email"
+          type="email"
+          required
+          placeholder="name@email.com"
+        />
+      </fieldset>
+
+      <fieldset>
+        <label for="number" id="number-label">
+          Please enter a number:
+        </label>
+        <input
+          id="number"
+          type="number"
+          min="1"
+          max="100"
+          placeholder="1-100"
+        />
+      </fieldset>
+      
+      <fieldset>
+        <label for="dropdown">
+          Please select one of these options:
+        </label>
+        <select id="dropdown">
+          <option value="option-1">Option 1</option>
+          <option value="option-2">Option 2</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>What social media do you follow us on, if any?</legend>
+
+        <input
+          type="checkbox"
+          id="meta"
+          name="social_media_choice"
+          value="meta"
+        />
+        <label for="meta">
+          Meta
+        </label>
+
+        <input
+          type="checkbox"
+          id="X"
+          name="social_media_choice"
+          value="X"
+        />
+        <label for="X">
+          X
+        </label>
+
+        <input
+          type="checkbox"
+          id="tumblr"
+          name="social_media_choice"
+          value="tumblr"
+        />
+        <label for="tumblr">
+          tumblr
+        </label>
+
+        <input
+          type="checkbox"
+          id="pinterest"
+          name="social_media_choice"
+          value="pinterest"
+        />
+        <label for="pinterest">
+          pinterest
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Please let us know if you'd like to be contacted in the future with additional surveys:</legend>
+        <input
+          id="yes-option"
+          type="radio"
+          name="contact_us"
+          value="yes"
+        />
+        <label for="yes-option">
+          Yes
+        </label>
+        <input
+          id="no-option"
+          type="radio"
+          name="contact_us"
+          value="no"
+        />
+        <label for="no-option">
+          No
+        </label>
+      </fieldset>
+
+      <label for="comments">Other comments?</label>
+      <textarea
+        cols="30"
+        rows="10"
+        name="comments"
+        id="comments"
+      >
+      </textarea>
+
+      <button id="submit" type="submit">
+        Submit
+      </button>
+    </form>
+  </body>
+</html>
